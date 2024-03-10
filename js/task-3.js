@@ -1,10 +1,8 @@
 function getElementWidth(content, padding, border) {
-  // Перетворюємо рядки в числа, видаляючи "px" та враховуючи box-sizing: border-box
   const contentWidth = parseFloat(content);
   const paddingWidth = parseFloat(padding);
   const borderWidth = parseFloat(border);
 
-  // Розрахунок загальної ширини елемента
   const totalWidth = contentWidth + 2 * paddingWidth + 2 * borderWidth;
 
   return totalWidth;
